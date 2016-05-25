@@ -17,7 +17,7 @@ FILES :=                              \
 	pylint --disable=bad-whitespace,missing-docstring,pointless-string-statement --reports=n --generate-rcfile > $@
 
 collatz-tests:
-	git clone https://github.com/cs373-spring-2016/collatz-tests.git
+	git clone https://github.com/CS373-Fall-2016/collatz-tests.git
 
 Collatz.html: Collatz.py
 	pydoc3 -w Collatz

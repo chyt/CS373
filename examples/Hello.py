@@ -22,7 +22,7 @@ Python 2.7.6
 
 
 % python3 --version
-Python 3.4.0
+Python 3.4.3
 
 
 
@@ -67,13 +67,13 @@ Nothing to be done.
 
 
 % python3
-Python 3.4.0 (default, Apr 11 2014, 13:05:11)
-[GCC 4.8.2] on linux
+Python 3.4.3 (default, Oct 14 2015, 20:28:29)
+[GCC 4.8.4] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 
 >>> help()
 
-Welcome to Python 3.4!  This is the interactive help utility.
+Welcome to Python 3.4's help utility!
 
 If this is your first time using Python, you should definitely check out
 the tutorial on the Internet at http://docs.python.org/3.4/tutorial/.
@@ -177,8 +177,8 @@ has the same effect as typing a particular string at the help> prompt.
 
 
 % python3
-Python 3.4.0 (default, Apr 11 2014, 13:05:11)
-[GCC 4.8.2] on linux
+Python 3.4.3 (default, Oct 14 2015, 20:28:29)
+[GCC 4.8.4] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 
 >>> import this

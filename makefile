@@ -16,7 +16,7 @@ init:
 	git init
 	git add README
 	git commit -m 'first commit'
-	git remote add origin git@github.com:gpdowning/cs373.git
+	git remote add origin git@github.com:fareszf/cs373.git
 	git push -u origin master
 
 pull:
