@@ -21,17 +21,12 @@ Python 2.7.6
 
 
 
-% python3 --version
-Python 3.4.3
+% python3.5 --version
+Python 3.5.2
 
 
 
-% python3 -m Hello
-Nothing to be done.
-
-
-
-% python3 Hello.py
+% python3.5 ./Hello.py
 Nothing to be done.
 
 
@@ -42,9 +37,10 @@ Nothing to be done.
 
 
 
-% python3
-Python 3.4.0 (default, Jun 19 2015, 14:20:21)
-[GCC 4.8.2] on linux
+% python3.5
+mounds$ python3.5
+Python 3.5.2 (default, Aug 22 2016, 14:49:41)
+[GCC 4.8.4] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 
 >>> import Hello
@@ -54,29 +50,32 @@ Nothing to be done.
 
 
 
-% python -m cProfile Hello.py
+% python3.5 -m cProfile Hello.py
 Nothing to be done.
-         2 function calls in 0.000 seconds
+         4 function calls in 0.000 seconds
 
    Ordered by: standard name
 
    ncalls  tottime  percall  cumtime  percall filename:lineno(function)
         1    0.000    0.000    0.000    0.000 Hello.py:11(<module>)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.exec}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.print}
         1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
 
 
 
-% python3
-Python 3.4.3 (default, Oct 14 2015, 20:28:29)
+% python3.5
+Python 3.5.2 (default, Aug 22 2016, 14:49:41)
 [GCC 4.8.4] on linux
 Type "help", "copyright", "credits" or "license" for more information.
+>>>
 
 >>> help()
 
-Welcome to Python 3.4's help utility!
+Welcome to Python 3.5's help utility!
 
 If this is your first time using Python, you should definitely check out
-the tutorial on the Internet at http://docs.python.org/3.4/tutorial/.
+the tutorial on the Internet at http://docs.python.org/3.5/tutorial/.
 
 Enter the name of any module, keyword, or topic to get help on writing
 Python programs and using Python modules.  To quit this help utility and
@@ -86,6 +85,7 @@ To get a list of available modules, keywords, symbols, or topics, type
 "modules", "keywords", "symbols", or "topics".  Each module also comes
 with a one-line summary of what it does; to list the modules whose name
 or summary contain a given string such as "spam", type "modules spam".
+
 
 help> range
 
