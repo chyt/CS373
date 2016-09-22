@@ -10,18 +10,18 @@ from timeit   import timeit
 from unittest import main, TestCase
 
 from Map import    \
-    Map_Iterator,  \
     map_range_for, \
     map_for,       \
-    map_generator
+    map_while,  \
+	map_generator
 
 class MyUnitTests (TestCase) :
     def setUp (self) :
         self.a = [
-            Map_Iterator,
             map_range_for,
             map_for,
-            map_generator,
+            map_while,
+			map_generator,
             map]
 
     def test_1 (self) :
@@ -74,23 +74,26 @@ if __name__ == "__main__" :
 """ #pragma: no cover
 % MapT
 ....
-Map_Iterator
-783.32 milliseconds
 
 map_range_for
-466.25 milliseconds
+384.34 milliseconds
 
 map_for
-414.43 milliseconds
+317.92 milliseconds
+
+map_while
+C:\Python35-32\lib\timeit.py:6: PendingDeprecationWarning: generator 'map_while' raised StopIteration
+  times.  See also Tim Peters' introduction to the Algorithms chapter in
+380.87 milliseconds
 
 map_generator
-413.00 milliseconds
+313.16 milliseconds
 
 map
-366.00 milliseconds
+282.11 milliseconds
 .
 ----------------------------------------------------------------------
-Ran 5 tests in 2.433s
+Ran 5 tests in 1.684s
 
 OK
 """
