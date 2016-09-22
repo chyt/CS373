@@ -13,7 +13,7 @@ from Map import    \
     map_range_for, \
     map_for,       \
     map_while,  \
-	map_generator
+    map_generator
 
 class MyUnitTests (TestCase) :
     def setUp (self) :
