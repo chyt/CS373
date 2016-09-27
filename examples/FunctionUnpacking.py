@@ -20,8 +20,8 @@ assert f(*t, z = 2) == [3, 4, 2]
 
 # f(*t)        # TypeError: f() missing 1 required positional argument: 'z'
 # f(2, 3, *t)  # TypeError: f() takes 3 positional arguments but 4 were given
-# f(*t, 2)     # SyntaxError: only named arguments may follow *expression
 # f(x = 2, *t) # TypeError: f() got multiple values for argument 'x'
+
 
 d = {"z" : 4, "y" : 3, "x" : 2}
 assert f(**d) == [2, 3, 4]
