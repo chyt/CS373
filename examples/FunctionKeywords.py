@@ -18,13 +18,4 @@ assert f(2, z = 4, y = 3) == [2, 3, 4]
 # f(2, x = 2, y = 3)                   # TypeError: f() got multiple values for argument 'x'
 # f(2, a = 4, y = 3)                   # TypeError: f() got an unexpected keyword argument 'a'
 
-def g (x, *, y, z) :
-    return [x, y, z]
-
-# g(2)       # TypeError: f() missing 2 required keyword-only arguments: 'y' and 'z'
-# g(2, 3, 4) # TypeError: f() takes 1 positional argument but 3 were given
-
-assert g(2, y = 3, z = 4)     == [2, 3, 4]
-assert g(x = 2, y = 3, z = 4) == [2, 3, 4]
-
 print("Done.")
