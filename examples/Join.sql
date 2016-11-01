@@ -80,7 +80,6 @@ select * from College;
 # select *
 #     from Student, Apply
 #     order by Student.sID;
-
 select *
     from Student cross join Apply
     order by Student.sID;
@@ -94,7 +93,6 @@ select *
 # select *
 #     from Student
 #     inner join Apply on Student.sID = Apply.sID;
-
 select *
     from Student
     inner join Apply using (sID);
