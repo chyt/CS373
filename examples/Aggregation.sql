@@ -72,31 +72,41 @@ insert into College values ('MIT',      'MA', 10000);
 insert into College values ('Stanford', 'CA', 15000);
 
 # ------------------------------------------------------------------------
+select "*** select * from Student ***" as "Select";
 select * from Student;
+select "*** select * from Apply ***" as "Select";
 select * from Apply;
+select "*** select * from College ***" as "Select";
 select * from College;
 
 # ------------------------------------------------------------------------
 select "*** stats on GPA of students ***";
 
+select "*** Choose everything from Student ****" as "Select";
 select *
     from Student;
 
+select "*** count the number of rows in Student ****" as "Select";
 select count(*)
     from Student;
 
+select "*** Choose only GPAs from Student ****" as "Select";
 select GPA
     from Student;
 
+select "*** Compute the average of GPAs from Student ****" as "Select";
 select avg(GPA)
     from Student;
 
+select "*** Find the maximum GPA from Student ****" as "Select";
 select max(GPA)
     from Student;
 
+select "*** Find the minimum GPA from Student ****" as "Select";
 select min(GPA)
     from Student;
 
+select "*** Compute the sum of GPAs from Student ****" as "Select";
 select sum(GPA)
     from Student;
 
@@ -231,18 +241,22 @@ select R.gpa - S.gpa
 # ------------------------------------------------------------------------
 select "*** number of applications to each college ***";
 
+select "*** order by cName ***";
 select *
     from Apply
     order by cName;
 
+select "*** grouped by cName ***";
 select *
     from Apply
     group by cName;
 
+select "*** *, count(*) grouped by cName ***";
 select *, count(*)
     from Apply
     group by cName;
 
+select "*** cName, count(*) grouped by cName ***";
 select cName, count(*)
     from Apply
     group by cName;

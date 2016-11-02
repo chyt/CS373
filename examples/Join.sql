@@ -72,14 +72,18 @@ insert into College values ('MIT',      'MA', 10000);
 insert into College values ('Stanford', 'CA', 15000);
 
 # ------------------------------------------------------------------------
+select "*** select * from Student ***" as "Select";
 select * from Student;
+select "*** select * from Apply ***" as "Select";
 select * from Apply;
+select "*** select * from College ***" as "Select";
 select * from College;
 
 # ------------------------------------------------------------------------
 # select *
 #     from Student, Apply
 #     order by Student.sID;
+select "*** select * from Student ***" as "CrossJoin";
 select *
     from Student cross join Apply
     order by Student.sID;
@@ -93,22 +97,27 @@ select *
 # select *
 #     from Student
 #     inner join Apply on Student.sID = Apply.sID;
+select "*** select * from Student ***" as "ThetaJoin";
 select *
     from Student
     inner join Apply using (sID);
 
 # ------------------------------------------------------------------------
+select "*** select * from Student where (sizeHS > 1000) and (major = 'CS') and (decision = false) ***" as "ThetaJoin";
 select *
     from Student
     inner join Apply using (sID)
     where (sizeHS > 1000) and (major = 'CS') and (decision = false);
 
+select "*** select sName, GPA from Student where (sizeHS > 1000) and (major = 'CS') and (decision = false) ***" as "ThetaJoin";
 select sName, GPA
     from Student
     inner join Apply using (sID)
     where (sizeHS > 1000) and (major = 'CS') and (decision = false);
 
 # ------------------------------------------------------------------------
+select "*** select * from Student where (sizeHS > 500)   and (major = 'CS')  and (decision = true)  and (enrollment > 20000) ***" as "ThetaJoin: Three tables";
+
 select *
     from Student
         inner join Apply   using (sID)
@@ -118,6 +127,7 @@ select *
           (decision   = true)  and
           (enrollment > 20000);
 
+select "*** select sName, GPA from Student where (sizeHS > 500)   and (major = 'CS')  and (decision = true)  and (enrollment > 20000) ***" as "ThetaJoin: Three tables";
 select sName, GPA
     from Student
         inner join Apply   using (sID)

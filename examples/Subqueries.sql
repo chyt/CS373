@@ -72,8 +72,11 @@ insert into College values ('MIT',      'MA', 10000);
 insert into College values ('Stanford', 'CA', 15000);
 
 # ------------------------------------------------------------------------
+select "*** select * from Student ***" as "Select";
 select * from Student;
+select "*** select * from Apply ***" as "Select";
 select * from Apply;
+select "*** select * from Student ***" as "Select";
 select * from College;
 
 # ------------------------------------------------------------------------
@@ -94,7 +97,7 @@ select distinct sID, sName, GPA
     where major = 'CS';
 
 select "this is also right, using subquery, with in";
-
+	
 select sID, sName, GPA
     from Student
     where sID in
@@ -195,7 +198,7 @@ select cName, state
 # ------------------------------------------------------------------------
 select "*** colleges with highest enrollment ***";
 
-select "using subquery, with not exists";
+select "using subquery, with not exists"III;
 
 select cName, enrollment
     from College as R

@@ -72,39 +72,49 @@ insert into College values ('MIT',      'MA', 10000);
 insert into College values ('Stanford', 'CA', 15000);
 
 # ------------------------------------------------------------------------
+select "*** select * from Student ***" as "Select";
 select * from Student;
+select "*** select * from Apply ***" as "Select";
 select * from Apply;
+select "*** select * from College ***" as "Select";
 select * from College;
 
 # ------------------------------------------------------------------------
+select "*** select * from Student where (GPA > 3.7) ***" as "Select";
 select *
     from Student
     where (GPA > 3.7);
 
 # ------------------------------------------------------------------------
+select "*** select * from Student where (GPA > 3.7) and (sizeHS < 1000) ***" as "Select";
 select *
     from Student
     where (GPA > 3.7) and (sizeHS < 1000);
 
 # ------------------------------------------------------------------------
+select "*** select * from Apply where (cName = 'Stanford') and (major = 'CS') ***" as "Select";
 select *
     from Apply
     where (cName = 'Stanford') and (major = 'CS');
 
 # ------------------------------------------------------------------------
+select "*** select sID, decision from Apply ***" as "Select";
 select sID, decision
     from Apply;
 
 # ------------------------------------------------------------------------
+select "*** select sID, sName from Student where (GPA > 3.7) ***" as "Select";
 select sID, sName
     from Student
     where (GPA > 3.7);
 
 # ------------------------------------------------------------------------
+select "*** select major, decision from Apply order by major ***" as "Select";
 select major, decision
     from Apply
     order by major;
 
+select "*** select distinct major, decision from Apply order by major ***" as "Select";
 select distinct major, decision
     from Apply
     order by major;

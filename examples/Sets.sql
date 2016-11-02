@@ -72,8 +72,11 @@ insert into College values ('MIT',      'MA', 10000);
 insert into College values ('Stanford', 'CA', 15000);
 
 # ------------------------------------------------------------------------
+select "*** select * from Student ***" as "Select";
 select * from Student;
+select "*** select * from Apply ***" as "Select";
 select * from Apply;
+select "*** select * from College ***" as "Select";
 select * from College;
 
 # ------------------------------------------------------------------------
