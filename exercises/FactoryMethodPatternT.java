@@ -39,7 +39,6 @@ final class Maze {
     public Door door (int i) {
         return _doors.get(i);}}
 
-@SuppressWarnings("auxiliaryclass")
 final class FactoryMethodPatternT {
     public static void main (String[] args) {
         System.out.println("FactoryMethodPatternT.java");
