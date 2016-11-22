@@ -1,6 +1,7 @@
 // ---------------------
 // PrototypePattern.java
 // ---------------------
+package test;
 
 class Room implements Cloneable {
     public Object clone () {
@@ -39,7 +40,6 @@ final class MazePrototype {
     public Door makeDoor (Room r, Room s) {
         return (Door) _door.clone();}}
 
-@SuppressWarnings("auxiliaryclass")
 abstract class Game {
     public static Maze createMaze (MazePrototype mp) {
         Maze m = new Maze();

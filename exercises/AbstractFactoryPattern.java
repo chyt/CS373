@@ -1,6 +1,7 @@
 // ---------------------------
 // AbstractFactoryPattern.java
 // ---------------------------
+package test;
 
 class MazeFactory {
     public Room makeRoom () {

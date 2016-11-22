@@ -3,11 +3,11 @@
 // ----------------------
 
 // http://en.wikipedia.org/wiki/Prototype_pattern
+package test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@SuppressWarnings("auxiliaryclass")
 final class Maze {
     private List<Room> _rooms = new ArrayList<Room>();
     private List<Door> _doors = new ArrayList<Door>();
@@ -24,7 +24,6 @@ final class Maze {
     public Door door (int i) {
         return _doors.get(i);}}
 
-@SuppressWarnings("auxiliaryclass")
 final class PrototypePatternT {
     public static void main (String[] args) {
         System.out.println("PrototypePatternT.java");

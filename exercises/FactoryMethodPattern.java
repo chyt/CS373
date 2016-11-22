@@ -1,8 +1,8 @@
 // -------------------------
 // FactoryMethodPattern.java
 // -------------------------
+package test;
 
-@SuppressWarnings("auxiliaryclass")
 class Game {
     public final Maze createMaze () {
         Maze m = new Maze();
@@ -19,7 +19,6 @@ class Game {
     public Door makeDoor (Room r, Room s) {
         return new Door(r, s);}}
 
-@SuppressWarnings("auxiliaryclass")
 class EnchantedGame extends Game {
     public EnchantedRoom makeRoom () {
         return new EnchantedRoom();}

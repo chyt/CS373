@@ -3,6 +3,7 @@
 // ----------------------------
 
 // http://en.wikipedia.org/wiki/Abstract_factory_pattern
+package test;
 
 import java.util.ArrayList;
 import java.util.List;
